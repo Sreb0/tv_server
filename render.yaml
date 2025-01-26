@@ -1,4 +1,3 @@
-
 services:
   - type: web
     name: tv-server
@@ -11,5 +10,3 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    regions:
-      - frankfurt  # You can set the region where you'd like your app to be hosted
