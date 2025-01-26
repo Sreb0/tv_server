@@ -1,0 +1,15 @@
+
+services:
+  - type: web
+    name: tv-server
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    repo: https://github.com/Sreb0/tv_server  # Adjust this URL if different
+    branch: main
+    autoDeploy: true  # Automatically deploy when changes are pushed
+    envVars:
+      - key: NODE_ENV
+        value: production
+    regions:
+      - frankfurt  # You can set the region where you'd like your app to be hosted
