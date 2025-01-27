@@ -23,7 +23,7 @@ exports.getChannelByChannel = async (req, res) => {
 
         } catch (error) {
             //console.error('Error detecting M3U8 file:', error);
-            res.status(500).json({ message: 'An error occurred while detecting the M3U8 file.' });
+            res.status(500).json({ error });
         }
     } else {
         res.status(404).send('Channel not found');
