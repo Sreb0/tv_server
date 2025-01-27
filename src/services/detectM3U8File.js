@@ -1,12 +1,12 @@
 const puppeteer = require('puppeteer');
-process.env.PUPPETEER_CACHE_DIR = '/opt/render/.cache/puppeteer';
+process.env.PUPPETEER_CACHE_DIR || '/opt/render/.cache/puppeteer';
 
 
 // Function to launch Puppeteer, set up network response listener, and navigate to the given URL
 async function detectM3U8File(url) {
     const browser = await puppeteer.launch({
         headless: true,
-        executablePath: '/usr/bin/chromium',
+        executablePath: '/usr/bin/google-chrome',
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 

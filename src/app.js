@@ -24,3 +24,4 @@ app.use('/', televisionRoutes);
 app.listen(PORT, () => {
     console.log(`Le serveur est en cours d'exécution sur http://localhost:${PORT}`);
 });
+
