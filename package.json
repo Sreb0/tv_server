@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
+    "build":"npx puppeteer browsers install",
     "start": "nodemon src/app.js"
   },
   "keywords": [],
